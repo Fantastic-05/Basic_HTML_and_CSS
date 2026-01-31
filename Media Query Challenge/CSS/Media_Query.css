@@ -1,0 +1,12 @@
+/* Default paragraph color */
+p {
+    color: black;
+    font-size: 18px;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    p {
+        color: blue;
+    }
+}
