@@ -6,6 +6,17 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
+
+		<!-- NAVIGATION -->
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#video">Video</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- END OF NAVIGATION -->
 	
 		<!-- HOME SECTION -->
 		<section id="home">
@@ -20,11 +31,94 @@
 		<!-- IMAGE GALLERY SECTION -->
 		<section id="gallery">
 			<h2>Gallery</h2>
-			<img src=" ./images/thumb/image1.jpg" alt="Pillars of Creation" width="300">
-			<img src=" ./images/thumb/image2.jpg" alt="One of a kind Star named Nasty" width="300">
-			<img src=" ./images/thumb/image3.jpg" alt="Image of Andromeda Galaxy" width="300">
+			<img src=" ./Images/Thumb/Thumbnail1.jpg" alt="Pillars of Creation" width="300">
+			<img src=" ./Images/Thumb/Thumbnail2.jpg" alt="One of a kind Star named Nasty" width="300">
+			<img src=" ./Images/Thumb/Thumbnail3.jpg" alt="Image of Andromeda Galaxy" width="300">
 		</section>
 		<!-- END OF IMAGE GALLERY SECTION -->
+
+		<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="./Images/plant1-small.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./Images/plant2-small.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./Images/plant3-small.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./Images/plant4-small.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./Images/plant1-small.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./Images/plant2-small.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./Images/plant3-small.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./Images/plant4-small.png" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="./Images/plant1-small.png" onclick="currentSlide(1)" alt="pink">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./Images/plant2-small.png" onclick="currentSlide(2)" alt="yellow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./Images/plant3-small.png" onclick="currentSlide(3)" alt="blue">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./Images/plant4-small.png" onclick="currentSlide(4)" alt="green">
+    </div>
+  </div>
+</div>
+
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
 		
 		<!-- CONTACT FORM SECTION -->
 		<section id="contact">
@@ -66,16 +160,7 @@
 		</footer>
 		<!-- END OF FOOTER -->
 		
-		<!-- NAVIGATION -->
-		<nav>
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#gallery">Gallery</a></li>
-				<li><a href="#video">Video</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-		<!-- END OF NAVIGATION -->
+		<script src="JS/one_page_website.js"></script>
 		
 	
 	</body>
